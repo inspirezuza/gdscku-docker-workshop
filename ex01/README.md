@@ -108,3 +108,6 @@ We can delete unused containers by:
   ```sh
   docker container prune
   ```
+
+   docker start [containerid]
+   docker attach [containerid]
