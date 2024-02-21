@@ -19,7 +19,7 @@ The way to persist data from Docker, is to use Volumes.
 2. Edit the `index.html` in the container,
    
    ```sh
-   $ docker exec -it /bin/bash <container-id>
+   $ docker exec -it <container-id> /bin/bash
    root@...> vi /usr/local/apache2/htdocs/public-html/index.html
    root@...> exit
    ```
@@ -28,7 +28,7 @@ The way to persist data from Docker, is to use Volumes.
 
 3. Stop the container with `docker stop <container-id>`
 
-4. Re-run the container with `docker run -d -p --rm 8080:80 <image>`
+4. Re-run the container with `docker run -d --rm -p 8080:80 <image>`
 
 ## Creating and using a volume
 
